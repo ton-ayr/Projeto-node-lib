@@ -4,7 +4,7 @@ export function contaPalavras(texto) {
     if (!paragrafo) return [];
     return verificaPalavrasDuplicadas(paragrafo);
   })
-  console.log(contagem);
+  return contagem;
 }
 
 function extraiParagrafos(texto) {
@@ -12,7 +12,7 @@ function extraiParagrafos(texto) {
 }
 
 function limpaPalavras(palavra) {
-  return palavra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()\r]/g, '');
+  return palavra.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '');
 }
 
 function verificaPalavrasDuplicadas(texto) {
